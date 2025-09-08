@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="background">
+
+    <header>
+        <nav class="nav-bar" id="navbar">
+            <div class="navbar-top">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#welcome-section">Home</a></li>
+                    <li><a class="nav-link" href="#degree">About</a></li>
+                    <li><a class="nav-link" href="#projects">Project</a></li>
+                    <li><a class="nav-link" href="#contact-me">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--
+    .nav-bar li {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}-->
+
+
+    <main>
+
+        <!-- nav bar -->
+        <!-- a whole bar: 4 boxes -->
+        <!--nav bar is right align, evenly spaced out boxes-->
+        <!--each box turns different color when mouse hovered, links to element in the page -->
+        <!-- 4 boxes: Home (goes back to home page), Education (degrees and achievement) and (timeline portion), Project (with all the projects done so far), Contact (email and phone number)-->
+        <!--nav bar is always on top of page when scrolling-->
+        <!--box have pop down menu when clicked on-->
+        <!--drop down menu show:
+        Education: Degree, Progress, Award
+        Project: names of the most current projects -->
+
+        <!--Welcome to my page-->
+        <!--solid dark background color, bright words, large font, Arial -->
+
+        <div class="container">
+            <div class="welcome">
+                <section id="welcome-section">
+                    <h1>Welcome to my page</h1>
+                    <p class="subtitle">a biologist</p>
+                </section>
+            </div>
+            <!--Education section 1: degrees -->
+            <!--two circles with degree names-->
+            <!--when mouse hover over, expand the circle to reveal year/achievement-->
+            <!--outside background same as welcome page, circle color bright, black text-->
+            <div id="degree" class="degree">
+                <h2>My journey so far...</h2>
+                <section class="intro" id="intro">
+                    <div class="container2">
+                        <div class="undergrad">
+                            <h3>Bachelor of Science</h3>
+                            <h4>Biochemistry</h4>
+                            <p>2015 - 2019</p>
+                            <p>NagD in UMPase</p>
+                            <p>International Student Scholarship</p>
+                        </div>
+                        <div class="grad">
+                            <h3>Master of Science</h3>
+                            <h4>Biology</h4>
+                            <p>2020 - 2022</p>
+                            <p>Thesis: Anticancer</p>
+                            <p>Master's Student Grant</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <!--Education section 2: Time line: arrow from left to right (past to present)-->
+            <!--background is dark, same as welcome page, timeline is bright-->
+            <!--a small empty circle on the time line with each milestone, circle is same color as the line-->
+            <!--each milestone is in a rectangle, soft edges, bright background, black text-->
+            <!--when hovered, milestone box expands a medium amount-->
+            <!--milestone box are staggered: starting with box 1 below the timeline, box2 above the timeline, etc.-->
+            <!--in each milestone box, underline the project name, link it to an element in "Project" section-->
+            <section class="cards">
+                <div id="flip-card-1" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>2017</h3>
+                            <h4>Presentations</h4>
+                            <ul>
+                                <li>Rochester Section of the ACS Annual Undergraduate Research Symposium</li>
+                                <li>RIT Undergraduate Research Symposium</li>
+                                <li>National Meeting of the ACS, Washington DC</li>
+                            </ul>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>2017</h3>
+                            <h4>Awards</h4>
+                            <ul>
+                                <li>ACS Undergrad Research Travel Award</li>
+                                <li>ASBMB Undergrad Research Award</li>
+                                <li>RIT COS Undergrad Research Fellowship</li>
+                                <ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="flip-card-2" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>2018</h3>
+                            <h4>Presentations</h4>
+                            <ul>
+                                <li>RIT Undergraduate Research Symposium</li>
+                                <li>National Meeting of the ACS, Boston MA</li>
+                            </ul>
+
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>2018</h3>
+                            <h4>Awards</h4>
+                            <ul>
+                                <li>RIT COS Undergrad Research Fellowship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="flip-card-3" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>2019</h3>
+                            <h4>Presentations</h4>
+                            <ul>
+                                <li>Rochester Section of the ACS Annual Undergraduate Research Symposium</li>
+                            </ul>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>2019</h3>
+                            <h4>Awards</h4>
+                            <ul>
+                                <li>Research Scholar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Project section-->
+            <!--vertical boxes with projects inside-->
+            <!--link the project to pop out webpages with projects on them?-->
+            <section id="projects">
+                <h2>My projects</h2>
+                <div class="project-boxes">
+                    <div class="project-tile">
+                        <div class="tile1">
+                            <a href="https://www.freecodecamp.org/fcca2effed8-94a8-41fa-bca0-0ac1a660e8e4"
+                                target="_blank">
+                                <p class="project-title">Product Landing Page</p> <img class="project-img"
+                                    src="https://media.istockphoto.com/id/544453032/photo/crab-close-up-cuba.jpg?s=612x612&w=0&k=20&c=TmXuchvwK-NqffB-G5UNinjMiMcOqqcn9ZlIPtpdMw8="></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <div class="tile2">
+                            <a href="https://www.freecodecamp.org/fcca2effed8-94a8-41fa-bca0-0ac1a660e8e4"
+                                target="_blank">
+                                <p class="project-title">Tribute Page</p> <img class="project-img"
+                                    src="https://static.vecteezy.com/system/resources/previews/024/160/400/non_2x/faceless-cowboy-character-icon-in-peach-and-white-color-vector.jpg"></img>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+
+            <!--contact section-->
+            <!--left align-->
+            <!--dark background, bright text-->
+            <section id="contact-me" class="contacts">
+                <div class="contact-info">
+                    <h3><a href="https://github.com/" target="_blank">Github</a></h3>
+                    <h3><a href="mailto:someone@example.com">Email</a></h3>
+                    <h3><a href="https://www.linkedin.com/" id="profile-link" target="_blank">LinkedIn</a></h3>
+                </div>
+            </section>
+            <!--contact links have
+          github
+          email
+          linkedin page
+          phone number (no link) just numbers-->
+            <!--image of mail and phone, with corresponding email and phone number next to them-->
+
+            <!--media query-->
+            <!--when screen is small (600px maybe):-->
+
+            <!--nav bar is vertical-->
+
+            <!--Education section becomes vertical-->
+
+            <!--Timeline section becomes vertical timeline-->
+            <!--boxes same style, text same style, change the direction of the time arrow (bottom to top is past to present)-->
+            <!--boxes staggered: starting box1 on left side, box2 on right side, etc.-->
+
+        </div>
+    </main>
+</body>
+
+</html>
